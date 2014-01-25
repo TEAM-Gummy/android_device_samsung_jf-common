@@ -45,6 +45,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/samsung/jf-common/media/media_profiles.xml:system/etc/media_profiles.xml
 
+# S4 Advanced Settings
+PRODUCT_PACKAGES += \
+    GummyS4Settings \
+    SamsungServiceMode
+
 # Kernel overclocking script, required for Project Elite Jf kernel inline build
 PRODUCT_COPY_FILES += \
     device/samsung/jf-common/rootdir/etc/init.d/03dementedcpuclock:system/etc/init.d/03gummycpuclock
