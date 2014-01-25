@@ -52,7 +52,7 @@ PRODUCT_PACKAGES += \
 
 # Kernel overclocking script, required for Project Elite Jf kernel inline build
 PRODUCT_COPY_FILES += \
-    device/samsung/jf-common/rootdir/etc/init.d/03dementedcpuclock:system/etc/init.d/03gummycpuclock
+    device/samsung/jf-common/rootdir/etc/init.d/03gummycpuclock:system/etc/init.d/03gummycpuclock
 
 # GPS
 PRODUCT_PACKAGES += \
