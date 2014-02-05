@@ -139,6 +139,9 @@ PRODUCT_PACKAGES += lights.msm8960
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/system/lib/libqc-opt.so
 
+# QRNGD
+PRODUCT_PACKAGES += qrngd
+
 # Prepatch to fix BT/WiFi bus lockups
 PRODUCT_COPY_FILES += device/samsung/jf-common/bluetooth/bcm4335_prepatch.hcd:system/vendor/firmware/bcm4335_prepatch.hcd
 
@@ -195,6 +198,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_short_ons_2="" \
     persist.rild.nitz_short_ons_3="" \
     ro.telephony.ril.v3=newDriverCall \
+<<<<<<< HEAD
     windowsmgr.max_events_per_sec=500 \
     ro.kernel.android.checkjni=0 \
     ro.media.enc.jpeg.quality=100 \
@@ -222,7 +226,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heapidealfree=8388608 \
     dalvik.vm.heapconcurrentstart=2097152 \
     dalvik.vm.verify-bytecode=false \
-    dalvik.vm.dexopt-data-only=1 \
     ro.config.hw_quickpoweron=true \
     ro.dalvik.vm.checkjni=0 \
     dalvik.vm.dexopt-flags=v=n,o=v \
@@ -231,7 +234,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.min.fling_velocity=8000 \
     ro.config.hw_fast_dormancy=1 \
     net.dns1=8.8.4.4 \
-    net.dns2=8.8.8.8
+    net.dns2=8.8.8.8 \
+    dalvik.vm.dexopt-data-only=0
 
 # call common msm8960
 $(call inherit-product, device/samsung/msm8960-common/msm8960.mk)
