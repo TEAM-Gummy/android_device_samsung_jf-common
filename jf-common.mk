@@ -198,7 +198,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_short_ons_2="" \
     persist.rild.nitz_short_ons_3="" \
     ro.telephony.ril.v3=newDriverCall \
-<<<<<<< HEAD
     windowsmgr.max_events_per_sec=500 \
     ro.kernel.android.checkjni=0 \
     ro.media.enc.jpeg.quality=100 \
