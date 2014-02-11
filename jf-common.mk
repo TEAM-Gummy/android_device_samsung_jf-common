@@ -80,8 +80,6 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    initlogo.rle \
-    init.bt.rc \
     init.carrier.rc \
     init.crda.sh \
     init.qcom.rc \
